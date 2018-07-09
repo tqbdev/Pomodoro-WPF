@@ -1,0 +1,22 @@
+﻿<Window x:Class="Promodoro_Timer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Promodoro_Timer"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="Promodoro Timer" Height="350" Width="525" Icon="MainIcon.ico"
+        >
+    <Grid>
+        <Button x:Name="btn_promodoro" Content="Promodoro" ClickMode="Press" Foreground="White" Background="BlueViolet" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="175" Click="btn_promodoro_Click"/>
+        <Button x:Name="btn_shbreak" Content="Short Break" ClickMode="Press" Foreground="White" Background="BlueViolet" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="175" Click="btn_shbreak_Click"/>
+        <Button x:Name="btn_lgbreak" Content="Long Break" ClickMode="Press" Foreground="White" Background="BlueViolet" FontSize="20" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Top" Width="175" Click="btn_lgbreak_Click"/>
+        <TextBlock x:Name="tx_Minutes" FontSize="100" FontWeight="Bold" HorizontalAlignment="Center" Margin="-150,-20,0,0" TextWrapping="Wrap" Text="25" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tx_Divison" FontSize="100" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,-20,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tx_Seconds" FontSize="100" FontWeight="Bold" HorizontalAlignment="Center" Margin="150,-20,0,0" TextWrapping="Wrap" Text="00" VerticalAlignment="Center"/>
+        <Button x:Name="btn_Start" FontSize="20" FontWeight="Bold" ClickMode="Press" Foreground="White" Background="Green" Content="Start" HorizontalAlignment="Left" Margin="30,0,0,30" VerticalAlignment="Bottom" Width="100" Height="40" Click="btn_Start_Click"/>
+        <Button x:Name="btn_Stop" FontSize="20" FontWeight="Bold" ClickMode="Press" Foreground="White" Background="Red" Content="Stop" HorizontalAlignment="Center" Margin="0,0,0,30" VerticalAlignment="Bottom" Width="100" Height="40" Click="btn_Stop_Click"/>
+        <Button x:Name="btn_Reset" FontSize="20" FontWeight="Bold" ClickMode="Press" Foreground="White" Background="Gray" Content="Reset" HorizontalAlignment="Right" Margin="0,0,30,30" VerticalAlignment="Bottom" Width="100" Height="40" Click="btn_Reset_Click"/>
+    </Grid>
+</Window>
